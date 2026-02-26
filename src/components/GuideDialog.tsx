@@ -84,6 +84,16 @@ const GuideDialog: React.FC = () => {
 
           {/* Content */}
           <div className="p-5 space-y-5">
+            {/* Overview Section */}
+            <div className="bg-muted/30 p-3 rounded-sm border border-border/50">
+              <p className="text-[11px] leading-relaxed text-muted-foreground whitespace-pre-wrap">
+                ATE 테스트 결과는 각 Die별 전기적 측정값으로 구성되며, Spec 비교 결과에 따라 Pass/Fail 또는 Bin 번호로 분류됩니다.{"\n\n"}
+                본 UI는 CSV 업로드 기능을 통해 해당 데이터를 불러오고, 각 Die를 X-Y 좌표로 매핑하여 Wafer Map 형태로 시각화합니다.{"\n\n"}
+                Bin 값에 따라 색상을 구분하여 Fail Map을 구성하며, 특정 Die 클릭 시 상세 전기 특성을 확인할 수 있습니다.{"\n\n"}
+                또한 Yield 계산 및 Center/Edge Fail 분석 기능을 통해 공정 이상 패턴을 빠르게 파악할 수 있도록 설계되었습니다.
+              </p>
+            </div>
+
             {guideItems.map((item) => (
               <div key={item.title}>
                 <h3 className="text-xs font-semibold text-foreground mb-2">{item.title}</h3>
