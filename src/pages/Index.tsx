@@ -5,6 +5,7 @@ import StatsBar from "@/components/StatsBar";
 import SpecLimitPanel from "@/components/SpecLimitPanel";
 import CsvUpload from "@/components/CsvUpload";
 import BinLegend from "@/components/BinLegend";
+import GuideDialog from "@/components/GuideDialog";
 import {
   DieData,
   SpecLimits,
@@ -67,6 +68,7 @@ const Index: React.FC = () => {
           <span className="text-[10px] text-muted-foreground">v1.0</span>
         </div>
         <div className="flex items-center gap-2">
+          <GuideDialog />
           <button
             onClick={handleReload}
             className="px-3 py-1 text-[10px] border border-border rounded
