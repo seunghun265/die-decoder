@@ -80,3 +80,6 @@ npm run build
 
 ## 📖 Analyzer Guide
 ATE 테스트 결과는 각 Die별 전기적 측정값으로 구성되며, Spec 비교 결과에 따라 Pass/Fail 또는 Bin 번호로 분류됩니다. 본 UI는 각 Die를 X-Y 좌표로 매핑하여 시각화하고, Yield 및 패턴 분석을 통해 공정 안정성을 평가할 수 있도록 설계되었습니다.
+
+## 바로실행 url
+die-decoder.lovable.app
